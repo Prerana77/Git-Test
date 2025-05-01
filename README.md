@@ -1,4 +1,4 @@
-# Git-Test
+# Git-Test DAY 1
 Git & Github
 1.	Project doc
 2.	Project doc 2
