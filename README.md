@@ -28,6 +28,7 @@ Commands
 
 
 DAY 2
+
 Benefits
 Trunk-Based Development (TBD)
 •	Faster feedback: Since everyone is merging to the same branch, integration issues are detected earlier.
