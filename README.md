@@ -55,3 +55,14 @@ Branch-Based Development (BBD)
 •	Slower integration: Merging features back into the main branch can be time-consuming, and features might get outdated before merging.
 •	Harder to maintain: Multiple long-lived branches can become difficult to manage, especially if they fall behind main.
 •	Delayed feedback: Delays in merging code can lead to integration problems that aren't discovered until later.
+
+
+Imp Stapes: 
+git config --global user.name "Your Name" 
+git config --global user.email "your_email@example.com" 
+git init git remote add origin https://github.com/imam-nadaf/softcraft01 
+git clone https://github.com/imam-nadaf/softcraft01 
+cd C:\Users\imam\softcraft01
+git add README.md 
+git commit -m "Add README.md" 
+git push -u origin main
