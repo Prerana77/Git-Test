@@ -1,4 +1,5 @@
 "Softcraft Day 2" 
+
 Advantages of Maven
 • Maven provides a standard project structure, so all developers can understand the layout of any Maven-based project easily.
 • It automates the build process, allowing you to compile, test, and package your code with simple commands.
