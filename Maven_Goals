@@ -1,0 +1,19 @@
+Learn about different types of maven goals
+
+1. The clean goal, 
+    provided by the maven-clean-plugin, deletes the target/ directory to ensure a clean build environment.
+
+2. The compile goal, 
+    from the maven-compiler-plugin, compiles the project's Java source code.
+
+3. The test goal, 
+    offered by the maven-surefire-plugin, runs the project's unit tests.
+
+4. The jar goal, 
+    part of the maven-jar-plugin, packages the compiled classes into a JAR file.
+
+5. The install goal, 
+    from the maven-install-plugin, installs the built artifact into the local Maven repository for use in other local projects.
+
+6. The deploy goal, 
+    provided by the maven-deploy-plugin, uploads the final artifact to a remote repository for sharing with other developers or teams.
