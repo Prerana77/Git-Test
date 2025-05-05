@@ -1,0 +1,39 @@
+
+party_names = {
+    "BJP": "Bhartiya Janta Party",
+    "INC": "Indian National Congress",
+    "BSP": "Bahujan Samaj Party",
+    "CPI": "Communist Party of India",
+    "NCP": "Nationalist Congress Party",
+    "IND": "Independant"
+}
+
+def process_election_results(file_path):
+    print("Reading from:", file_path)
+    
+    print("Constituency, Winning Party, Vote Share")
+    with open("Python\election_results.txt", 'r') as file:
+        for line in file:
+            line = line.strip()
+            if not line:
+                continue 
+            parts = line.split("-")
+            constituency = parts[0]
+            votes_data = parts[1].split(",")
+
+            votes_dict = {}
+            total_votes = 0
+
+            for vote_pair in votes_data:
+                party_code, vote_count = vote_pair.split("=")
+                vote_count = int(vote_count)
+                votes_dict[party_code] = vote_count
+                total_votes += vote_count
+
+            winning_party_code = max(votes_dict, key=votes_dict.get)
+            winning_votes = votes_dict[winning_party_code]
+            vote_share = (winning_votes / total_votes) * 100
+
+            print(f"{constituency}, {party_names[winning_party_code]}, {vote_share:.2f}")
+
+process_election_results('election_results.txt')
