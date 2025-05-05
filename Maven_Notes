@@ -1,0 +1,25 @@
+** Why build tool: **
+
+1. Automatically download all the dependencies with appropriate versions
+2. Write custom variables on run
+3. Automatically create jar/war
+4. Deploy automatically               mvn deploy
+5. handle versioning automatically
+
+** Build Lifecycle **
+what is build lifecycle? -> Sequence of phases of Maven follows to build the project
+
+0. validate - pom.xml 
+1. Compile - resource
+2. test
+3. package - will include all the .class files as well as resources into a jar file: 
+    Akash - run Main.class file
+    Rakesh - validate class (java), compile, test, package to jar, deploy
+    Vidhi - validate pom.xml, ensure dependencies exist, compile .java - .class, run tests, create jar, deploy
+    Prerana - validate pom.xml, generate resources, compile, run tests, create jar, deploy
+
+validate pom.xml, copy resources, compile main java, copy test resources, compile test java, 
+run tests, create jar
+
+4. deploy
+    validate, compile, test, package, deploy
