@@ -37,3 +37,9 @@ def process_election_results(file_path):
             print(f"{constituency}, {party_names[winning_party_code]}, {vote_share:.2f}")
 
 process_election_results('election_results.txt')
+
+
+election_result.txt  #file
+Jaipur-BJP=400,INC=250,CPI=20,NCP=150
+Delhi-INC=300,BJP=320,BSP=60
+
