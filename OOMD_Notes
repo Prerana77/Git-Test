@@ -1,0 +1,66 @@
+              ** Object Oriented Modelling and Designing **
+
+A way of thinking about how to create software by focusing upon objects
+
+how to bake a pizza
+
+- cheese
+- base
+- olives
+- jalapenos
+- corn
+- oregano
+- chilli flakes
+- onion
+- capsicum
+- ketchup
+- pizza sauce
+
+
+- recipe:
+    1. base = new Base("Cheese Burst"), new Base("Whole Wheat"), new Base("ThinCrust")
+    2. pizza sauce = new PizzaSauce(list.of(ingredients))
+    3. toppings = new Toppings(list.of(toppings))
+    4. cheese = new Cheese("Mozzarela"), new Cheese("Cheddar")
+
+
+Pizza farmhouse = new Pizza(base, pizzaSauce, toppings, cheese)
+
+Base tcBase = new Base("CheeseBurst")
+PizzaSauce tcPs = new PizzaSauce("topSecretRecipe")
+Toppings tcToppings = new Toppings("Tomato")
+Cheese tcCheese = new Cheese("Mozzarella")
+
+Pizza tomatoCheese = new Pizza(tcBase, tcPS, tcToppings, tcCheese)
+
+To lean OOMD we need to unlearn whatever programming knowledge we have until now!!!
+
+You can use Object Oriented Programming Language to write procedural code
+
+Java, Kotlin, Python: Code is still procedural - System.out, System.in, Scanner, String, String[]
+
+
+                                     **  Procedural programming  **
+
+var base = CheeseBurst;
+var toppings = ["tomato"]
+var cheese = "Mozzarella"
+var pizzaSauce = "Red Pizza Sauce"
+
+recipe(base, toppings, cheese, pizzaSauce) {
+    return base + pizzaSauce + toppings + cheese
+}
+
+
+Objects: Think of anything that you can identify and describe in real world
+    ex: Laptops/PC, Smartphone, moon, bike, animal, Bank Account, Meeting (Meet), DNA, Crypto Token, Software, Order (shopping order, food order)
+
+Class: Blueprint of an object
+    - it provides basic structure of an object, consider your house planning blueprint as Class, your house as object
+    - Laptop/PC formfactor is a class, mac, gaming laptop, 
+    - Satellite: Moon, artificial
+    - bike: Dominor 400, Dominor 200, Pulsar 200, 
+    - Bank Account: Savings Account, Current Account, FD Account, Loan Account, etc
+    - Meeting: Physical, Virtual, Education Meet, Business Meet,
+    - DNA: Faulty DNA, Good DNA
+ 
