@@ -1,0 +1,94 @@
+OOMD Test Project of Building Construction
+
+package org.example;
+import java.util.Scanner;
+import java.util.*;
+
+class Material {
+    String name;
+    Material(String name) {
+        this.name = name;
+    }
+}
+
+class Worker {
+    String name;
+    Worker(String name) {
+        this.name = name;
+    }
+}
+
+class Equipment {
+    String name;
+    Equipment(String name) {
+        this.name = name;
+    }
+}
+
+class Building {
+    List<Material> materials;
+    List<Worker> workers;
+    List<Equipment> equipment;
+
+    Building(List<Material> materials, List<Worker> workers, List<Equipment> equipment) {
+        this.materials = materials;
+        this.workers = workers;
+        this.equipment = equipment;
+    }
+
+    void startConstruction() {
+        System.out.println("Starting construction with:");
+        System.out.println("\nMaterials:");
+        for (Material m : materials) {
+            System.out.println(" - " + m.name);
+        }
+        System.out.println("\n Workers:");
+        for (Worker w : workers) {
+            System.out.println(" - " + w.name);
+        }
+        System.out.println("\n Equipment:");
+        for (Equipment e : equipment) {
+            System.out.println(" - " + e.name);
+        }
+        System.out.println("\n Construction in progress...");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of materials:");
+        int numMaterials = scanner.nextInt();
+        scanner.nextLine();
+        List<Material> materials = new ArrayList<>();
+        System.out.println("Enter the materials:");
+        for (int i = 0; i < numMaterials; i++) {
+            String materialName = scanner.nextLine();
+            materials.add(new Material(materialName));
+        }
+
+        System.out.println("\nEnter the number of workers:");
+        int numWorkers = scanner.nextInt();
+        scanner.nextLine();
+        List<Worker> workers = new ArrayList<>();
+        System.out.println("Enter the workers:");
+        for (int i = 0; i < numWorkers; i++) {
+            String workerName = scanner.nextLine();
+            workers.add(new Worker(workerName));
+        }
+
+        System.out.println("\n Enter the number of equipment:");
+        int numEquipment = scanner.nextInt();
+        scanner.nextLine(); 
+        List<Equipment> equipment = new ArrayList<>();
+        System.out.println("Enter the equipment:");
+        for (int i = 0; i < numEquipment; i++) {
+            String equipmentName = scanner.nextLine();
+            equipment.add(new Equipment(equipmentName));
+        }
+
+        Building building = new Building(materials, workers, equipment);
+        building.startConstruction();
+        scanner.close();
+    }
+}
