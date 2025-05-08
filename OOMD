@@ -1,6 +1,6 @@
 OOMD Test Project of Building Construction
 
-package org.example;
+package softcraft.com;
 import java.util.Scanner;
 import java.util.*;
 
@@ -37,27 +37,30 @@ class Building {
     }
 
     void startConstruction() {
-        System.out.println("Starting construction with:");
-        System.out.println("\nMaterials:");
+        System.out.println("\nStarting construction with:");
+
+        System.out.println("Materials:");
         for (Material m : materials) {
-            System.out.println(" - " + m.name);
+            System.out.println(" - " +m.name);
         }
+
         System.out.println("\n Workers:");
         for (Worker w : workers) {
-            System.out.println(" - " + w.name);
+            System.out.println(" - " +w.name);
         }
+
         System.out.println("\n Equipment:");
         for (Equipment e : equipment) {
-            System.out.println(" - " + e.name);
+            System.out.println(" - " +e.name);
         }
         System.out.println("\n Construction in progress...");
     }
 }
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter the number of materials:");
+        System.out.println("\nEnter the number of materials:");
         int numMaterials = scanner.nextInt();
         scanner.nextLine();
         List<Material> materials = new ArrayList<>();
@@ -77,9 +80,9 @@ public class Main {
             workers.add(new Worker(workerName));
         }
 
-        System.out.println("\n Enter the number of equipment:");
+        System.out.println("\nEnter the number of equipment:");
         int numEquipment = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         List<Equipment> equipment = new ArrayList<>();
         System.out.println("Enter the equipment:");
         for (int i = 0; i < numEquipment; i++) {
@@ -89,6 +92,6 @@ public class Main {
 
         Building building = new Building(materials, workers, equipment);
         building.startConstruction();
-        scanner.close();
+
     }
 }
