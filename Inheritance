@@ -1,0 +1,20 @@
+** Types of Inheritance **
+
+1. Single Inheritance – One child class inherits from one parent.
+
+2. Multilevel Inheritance – A class inherits from a class, which itself inherits from another.
+
+3. Hierarchical Inheritance – Multiple child classes inherit from one parent.
+
+4. Multiple Inheritance – A class inherits from more than one parent (not supported in Java classes directly, but supported via interfaces).
+
+5. Hybrid Inheritance – A mix of the above (commonly found in C++).
+
+
+** Key Features of Inheritance **
+
+1. The child class inherits all non-private members of the parent class.
+
+2. The child class can use, override, or extend the inherited methods.
+
+3. Promotes code reusability – you don't have to rewrite code.
