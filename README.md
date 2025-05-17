@@ -61,9 +61,9 @@ Branch-Based Development (BBD)
 Imp Stapes: 
 git config --global user.name "Your Name" 
 git config --global user.email "your_email@example.com" 
-git init git remote add origin https://github.com/imam-nadaf/softcraft01 
-git clone https://github.com/imam-nadaf/softcraft01 
-cd C:\Users\imam\softcraft01
+git init git remote add origin https://github.com/Prerana77/softcraft01 
+git clone https://github.com/Prerana77/softcraft01 
+cd C:\Users\Prerana\softcraft01
 git add README.md 
 git commit -m "Add README.md" 
 git push -u origin main
