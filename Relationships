@@ -1,0 +1,48 @@
+Relationships: Concepts and Examples
+1. In Object-Oriented Programming (OOP)
+In OOP, relationships define how classes (objects) are connected. The main types are:
+
+a. Association
+A general connection between two classes.
+Example: A Teacher teaches a Student.
+class Teacher:
+    def __init__(self, name):
+        self.name = name
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+teacher = Teacher("Mr. Smith")
+student = Student("Alice")
+student.teacher = teacher 
+
+b. Aggregation
+A special form of association where the child can exist independently of the parent.
+Example: A Department has Professors, but professors can exist independently.
+
+class Professor:
+    def __init__(self, name):
+        self.name = name
+
+class Department:
+    def __init__(self, name):
+        self.professors = []
+        self.name = name
+
+    def add_professor(self, prof):
+        self.professors.append(prof)
+
+. Composition
+Stronger form of aggregation. The child cannot exist independently of the parent.
+Example: A House has Rooms, and if the house is destroyed, rooms are too.
+
+class Room:
+    def __init__(self, name):
+        self.name = name
+
+class House:
+    def __init__(self):
+        self.rooms = [Room("Living Room"), Room("Kitchen")]
+
+
