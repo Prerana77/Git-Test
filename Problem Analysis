@@ -1,0 +1,31 @@
+Simple To-Do List Application with Priority
+
+Questions:
+1. Can multiple tasks have the same priority?
+2. Do you want due dates or deadlines?
+3. Is user authentication required?
+4. Should completed tasks be archived or deleted?
+5. Should deleted tasks go to a recycle bin or be permanently deleted?
+6. Would you like a notification system?
+
+===============================================================================================================================================================================
+
+Task:-
+Attributes: id, description, priority, status
+Behaviors: addTask(), viewTask(), completeTask(), deleteTask(), editTask(), saveTasks()
+
+DueDate:-
+Attributes: date
+Behavior: overDue()
+
+User:-
+Attributes: id, name, email, password
+Behavior:  login(), logout(), viewTaks(), createTask()
+
+RecycleBin:-
+Attributes: deletedTasks
+Behavior: addToBin(), restoreTask(), permanentlyDelete()
+
+Notification:-
+Attribute: message, taskId
+Behavior: sendTo(), createNotification(), scheduleNotification()
