@@ -20,7 +20,7 @@ Attributes: transactionId, amount, type, date, account, category
 Behaviors: edit(), delete(), viewDetails()
 
 4. Category
-Attributes: categoryId, categoryName, type (income/expense)
+Attributes: id, name, type (income/expense)
 Behaviors: addCategory(), editCategory()
 
 5. Budget
