@@ -1,0 +1,31 @@
+Problem Statement: Personal Finance Tracker
+
+You need to design a simple application to help individuals track their personal finances. The system should allow users to record income and expenses, 
+categorize transactions, and manage different accounts.
+
+==============================================================================================================================================================================
+
+Attributes & Behaviors
+
+1. User
+Attributes: userId, name, email, password
+Behaviors: login(), logout(), register()
+
+2. Account
+Attributes: accountId, accountName, balance
+Behaviors: addTransaction(), getBalance()
+
+3. Transaction
+Attributes: transactionId, amount, type, date, account, category
+Behaviors: edit(), delete(), viewDetails()
+
+4. Category
+Attributes: categoryId, categoryName, type (income/expense)
+Behaviors: addCategory(), editCategory()
+
+5. Budget
+Attributes: category, limit, spentAmount
+Behaviors: isOverLimit(), updateSpentAmount()
+
+
+
