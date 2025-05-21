@@ -25,7 +25,7 @@ Behaviors: addCategory(), editCategory()
 
 5. Budget
 Attributes: category, limit, spentAmount
-Behaviors: isOverLimit(), updateSpentAmount()
+Behaviors: overLimit(), spentAmount()
 
 
 
