@@ -1,0 +1,26 @@
+Fitness Tracking Application
+Problem Statement:
+
+You are tasked with designing a simple fitness tracking application for individual users. 
+The system should help users log their workouts, track progress, and manage their exercises.
+
+=================================================================================================================================================================================
+
+User
+Attributes: id, name, age, email, password
+Behaviors: register(), login(), viewProfile()
+
+Workout
+Attributes: id, date, duration, list
+Behaviors: addExercise(), removeExercise(), totalCaloriesBurned()
+
+Tracker
+Attributes: id, workoutHistory, progressData
+Behaviors: showProgress(), graph()
+
+Exercise
+Attributes: name, type, sets, weight, duration
+Behaviors: calculateCaloriesBurned()
+
+
+
