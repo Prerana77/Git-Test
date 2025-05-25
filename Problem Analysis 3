@@ -5,6 +5,13 @@ You are tasked with designing a simple fitness tracking application for individu
 The system should help users log their workouts, track progress, and manage their exercises.
 
 =================================================================================================================================================================================
+Analysis:
+1. Build Fitness Tracking Application
+2. Multiple users can use this app
+3. User should be able to log their workout
+4. User should be able to track their progress
+5. User should be able to manage their exercise
+
 
 User
 Attributes: id, name, age, email, password
