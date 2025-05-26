@@ -14,20 +14,21 @@ Analysis:
 
 
 User
-Attributes: id, name, age, email, password
+Attributes: id, name, age, email, password, contactNumber
 Behaviors: register(), login(), viewProfile()
 
 Workout
 Attributes: id, date, duration, list
-Behaviors: addExercise(), removeExercise(), totalCaloriesBurned()
+Behaviors: addExercise(), removeExercise()
 
-Tracker
+Progress 
 Attributes: id, workoutHistory, progressData
 Behaviors: showProgress(), graph()
 
 Exercise
-Attributes: name, type, sets, weight, duration
-Behaviors: calculateCaloriesBurned()
+Attributes: name, type, sets, weight, duration, reps, caloriesBurned
+Behaviors: logReps(), logSets(), totalCaloriesBurned()
 
-
-
+Goals
+Attributes: name, type, duration, startDate, endDate, status, overDue
+Behaviour: addGoal(), editGoal(), goalCompleted(), 
