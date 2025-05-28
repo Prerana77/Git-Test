@@ -1,0 +1,19 @@
+Problem Statement: Kanban System for a Distributed Software Development Team
+
+A rapidly growing software development company, "InnovateTech," is struggling with coordinating tasks and maintaining visibility across 
+its geographically distributed teams. They currently use a combination of spreadsheets and ad-hoc communication, leading to missed deadlines, 
+duplicated efforts, and a lack of transparency regarding project progress.
+
+=================================================================================================================================================================================
+
+User
+Attribute: id, name, email, location
+Behavior: createTask(), assignTask(), updateTask(), addComment()
+
+Task
+Attribute: id, title, status, discription, date, priority, comment
+Behavior: addComment(), assignUser(), changeStatus()
+
+Project
+Attribute: projectID, name, date, members, description
+Behavior: addMember()
