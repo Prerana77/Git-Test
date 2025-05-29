@@ -6,14 +6,39 @@ duplicated efforts, and a lack of transparency regarding project progress.
 
 =================================================================================================================================================================================
 
-User
-Attribute: id, name, email, location
-Behavior: createTask(), assignTask(), updateTask(), addComment()
+Domain analysis:
 
-Task
-Attribute: id, title, status, discription, date, priority, comment
-Behavior: addComment(), assignUser(), changeStatus()
+0. Team can have multiple kanban boards - DONE
+1. Team should be able to add/edit/delete kanban board - DONE
+2. Team should be able to add/edit/delete tasks on kanban board - DONE
+3. Team should be able to assign task to a particular dev - DONE
+4. Team should be able to assign multiple devs to a task - DONE
+5. Team should be able to add/edit/delete sections/stages/states in kanban board - DONE
 
-Project
-Attribute: projectID, name, date, members, description
-Behavior: addMember()
+domain modelling:
+
+1. Team: Class
+    - attributes: id: String, name: String, members: List<Developers>, kanbanBoards: List<KanbanBoard>
+    - behaviours: addDev, editDev, removeDev, 
+                    add/edit/deleteKanbanBoard, 
+                       add/edit/deleteTask, 
+                    add/deleteDevForTask,
+                        add/deleteStage
+
+2. Developer: Class
+    - attributes: id: String, name: String, skills: List<String>
+    - behaviour: addSkill, removeSkill
+
+3. KanbanBoard: Class
+    - attributes: id: String, name: String, tasks: List<Task>, stages: List<Stage>
+    - behaviours: add/edit/deleteTask, add/deleteStage, get/set, add/edit/deleteDevForTask
+
+4. Card(Task): Class
+    - attribute: id: String, title: String, desc: String, assignee: List<Developer>,due date: Date,
+                    reporter: Developer, status: TaskStatus
+
+5. Stage: enum
+    - constants: Backlog, ToDo, InProgress, Review, Complete
+
+6. TaskStatus: enum
+    - constants: Backlog, ToDo, InProgress, Review, Complete, Blocked
