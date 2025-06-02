@@ -1,0 +1,40 @@
+Problem Statement: Managing a University Course Registration System
+You need to design a system for a university to manage its course offerings, student registrations, and instructor assignments
+
+=================================================================================================================================================================================
+
+Analysis:
+
+-Manage courses
+-Allow students to register courses
+-Assign instructors to courses
+-Maintain records of course schedules, enrollments, and teaching assignments
+
+
+Modeling:
+
+Class: course
+Attributes: id:string, title:string, description:string, capacity:int, semester:string 
+Behavior: addStudent(), removeStudent()
+
+Class: student
+Attributes: studenyId: string, name:string, email:string, 
+Behavior: registerCourse()
+
+Class: instructor
+Attributes: instructorId:string, name:string, department:string, email:string
+Behavior: assignToCourse(), teachingSchedule()
+
+Class: semester
+Attributes:- semesterId:string, term:string, startDate:date, endDate:date, courses:List<Course>
+Behavior:- getCourses(): List<Course>, addCourse()
+
+Class: schedule
+Attributes:- days:List<String>, startTime:time, endTime:time, location:string
+Behavior:- get/set
+
+Class: registration
+Attributes:- student, course, registrationDate:date
+Behavior:- confirmRegistration(), cancelRegistration()
+
+
